@@ -3,10 +3,10 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-loaded_model = pickle.load(open('C:/Users/dhiem/Documents/Final/model.sav','rb'))
+loaded_model = pickle.load(open('model.sav','rb'))
 
 def main():
-    train = pd.read_csv("C:/Users/dhiem/Documents/Final/application_train.csv")
+    train = pd.read_csv("application_train.csv")
     st.title('Credit Risk Scoring')
 
     train.drop('COMMONAREA_MEDI', axis = 'columns', inplace = True)
