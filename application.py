@@ -6,7 +6,7 @@ import pandas as pd
 loaded_model = pickle.load(open('model_cleaned.sav','rb'))
 
 def main():
-    X = pd.read_csv("application_train.csv")
+    X = pd.read_csv("cleaned_data.csv")
     st.title('Credit Risk Scoring')
 
     CODE_GENDER = st.selectbox(
