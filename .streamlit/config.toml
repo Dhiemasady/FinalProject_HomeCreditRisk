@@ -1,3 +1,6 @@
+[browser]
+gatherUsageStats = false
+
 [theme]
 primaryColor = "#9E0142"
 backgroundColor = "#FEE08B"
