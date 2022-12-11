@@ -3,10 +3,10 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-loaded_model = pickle.load(open('C:/Users/dhiem/Documents/Final/model.sav','rb'))
+loaded_model = pickle.load(open('model.sav','rb'))
 
 def main():
-    train = pd.read_csv("C:/Users/dhiem/Documents/Final/application_train.csv")
+    train = pd.read_csv("application_train.csv")
     st.title('Credit Risk Scoring')
 
     train.drop('COMMONAREA_MEDI', axis = 'columns', inplace = True)
@@ -92,11 +92,6 @@ def main():
     train_clean3 = train_clean4[(np.abs(stats.zscore(train_clean4["OBS_60_CNT_SOCIAL_CIRCLE"])) < 3)] 
     train_clean2 = train_clean3[(np.abs(stats.zscore(train_clean3["DEF_60_CNT_SOCIAL_CIRCLE"])) < 3)] 
     train_clean1 = train_clean2[(np.abs(stats.zscore(train_clean2["DEF_30_CNT_SOCIAL_CIRCLE"])) < 3)] 
-    train_clean1['DAYS_BIRTH'] = abs(train_clean1['DAYS_BIRTH']/365)
-    train_clean1["DAYS_EMPLOYED"] = abs(train_clean1['DAYS_EMPLOYED']/30)
-    train_clean1["DAYS_ID_PUBLISH"] = abs(train_clean1['DAYS_ID_PUBLISH'])
-    train_clean1["DAYS_LAST_PHONE_CHANGE"] = abs(train_clean1['DAYS_LAST_PHONE_CHANGE'])
-    train_clean1["DAYS_REGISTRATION"] = abs(train_clean1['DAYS_REGISTRATION'])
 
     from sklearn.utils import resample
 
