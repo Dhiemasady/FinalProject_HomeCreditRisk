@@ -92,11 +92,6 @@ def main():
     train_clean3 = train_clean4[(np.abs(stats.zscore(train_clean4["OBS_60_CNT_SOCIAL_CIRCLE"])) < 3)] 
     train_clean2 = train_clean3[(np.abs(stats.zscore(train_clean3["DEF_60_CNT_SOCIAL_CIRCLE"])) < 3)] 
     train_clean1 = train_clean2[(np.abs(stats.zscore(train_clean2["DEF_30_CNT_SOCIAL_CIRCLE"])) < 3)] 
-    train_clean1['DAYS_BIRTH'] = abs(train_clean1['DAYS_BIRTH']/365)
-    train_clean1["DAYS_EMPLOYED"] = abs(train_clean1['DAYS_EMPLOYED']/30)
-    train_clean1["DAYS_ID_PUBLISH"] = abs(train_clean1['DAYS_ID_PUBLISH'])
-    train_clean1["DAYS_LAST_PHONE_CHANGE"] = abs(train_clean1['DAYS_LAST_PHONE_CHANGE'])
-    train_clean1["DAYS_REGISTRATION"] = abs(train_clean1['DAYS_REGISTRATION'])
 
     from sklearn.utils import resample
 
