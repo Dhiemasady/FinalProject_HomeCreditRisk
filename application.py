@@ -89,7 +89,7 @@ def main():
         (1,2,3))
     'You selected:',REGION_RATING_CLIENT_W_CITY
 
-    DAYS_BIRTH = st.text_input('Client\s Age This Year')
+    DAYS_BIRTH = st.text_input('Client\'s Age This Year')
 
     AMT_ANNUITY = st.text_input('Amount of Client\'s Income In A Year')
 
