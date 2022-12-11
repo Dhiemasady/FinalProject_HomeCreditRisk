@@ -19,7 +19,7 @@ def main():
         CODE_GENDER=1
 
     NAME_EDUCATION_TYPE = st.selectbox(
-        'Client\s Last Education ?', ('Lower Secondary','Secondary','Incomplete Higher','Higher Education','Academic Degree'))
+        'Client\'s Last Education ?', ('Lower Secondary','Secondary','Incomplete Higher','Higher Education','Academic Degree'))
     'You selected:', NAME_EDUCATION_TYPE
 
     if NAME_EDUCATION_TYPE=="Academic Degree":
@@ -75,7 +75,7 @@ def main():
         NAME_INCOME_TYPE=7
 
     NAME_CONTRACT_TYPE = st.selectbox(
-        'Client\s Type Loan?',
+        'Client\'s Type Loan?',
         ('Cash Loans','Revolving Loans'))
     'You selected:', NAME_CONTRACT_TYPE
     if NAME_CONTRACT_TYPE=="Cash Loans":
