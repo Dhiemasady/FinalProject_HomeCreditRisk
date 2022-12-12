@@ -75,7 +75,7 @@ def main():
         NAME_INCOME_TYPE=7
 
     NAME_CONTRACT_TYPE = st.selectbox(
-        'Client\'s type of loan?',
+        'Clien\’s loan annuity',
         ('Cash Loans','Revolving Loans'))
     'You selected:', NAME_CONTRACT_TYPE
     if NAME_CONTRACT_TYPE=="Cash Loans":
