@@ -3,7 +3,7 @@ Final Project Zenius Accelerated Machine Learning
 
 |          Nama         | LinkedIn Link |       Universitas       |
 |:---------------------:|:----------:|:----------------:|
-|  Vina Hasan |  [Profile](https://www.linkedin.com/in/dhiemasadykw/)  | Universitas Siliwangi |
+|  Vina Hasan |  [Profile](https://www.linkedin.com/in/dhiemasadykw/)  | Universitas Sriwijaya |
 |  Zahra Avia  |  [Profile](https://www.linkedin.com/in/zahraavia/)  | Universitas Padjadjaran |
 |   Dhiemas Ady Kusuma W    |  [Profile](https://www.linkedin.com/in/dhiemasadykw/)  |  Universitas Pembangunan Nasional Veteran Yogyakarta |
 
