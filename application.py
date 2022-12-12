@@ -10,7 +10,7 @@ def main():
     st.title('Credit Risk Scoring')
 
     CODE_GENDER = st.selectbox(
-        'Client\'s Gender',('Female','Male'))
+        'Client\'s gender',('Female','Male'))
     'You selected:', CODE_GENDER
 
     if CODE_GENDER=="Female":
@@ -19,7 +19,7 @@ def main():
         CODE_GENDER=1
 
     NAME_EDUCATION_TYPE = st.selectbox(
-        'Client\'s Last Education ?', ('Lower Secondary','Secondary','Incomplete Higher','Higher Education','Academic Degree'))
+        'Client\'s last education', ('Lower Secondary','Secondary','Incomplete Higher','Higher Education','Academic Degree'))
     'You selected:', NAME_EDUCATION_TYPE
 
     if NAME_EDUCATION_TYPE=="Academic Degree":
@@ -34,17 +34,17 @@ def main():
         NAME_EDUCATION_TYPE=4
 
     FLAG_OWN_CAR = st.selectbox(
-        'Client Has A Car',
-        ('Yes','No'))
+        'Client\'s car ownership',
+        ('Owns a Car','Does not own a car'))
     'You selected:', FLAG_OWN_CAR
 
-    if FLAG_OWN_CAR=="No":
+    if FLAG_OWN_CAR=="Does not own a car":
         FLAG_OWN_CAR=0
     else:
         FLAG_OWN_CAR=1
 
     REG_CITY_NOT_LIVE_CITY = st.selectbox(
-        'Client Permanent Address ( City Level )',
+        'Client\'s Permanent Address (City Level)',
         ('Different with Work Address','Same with Work Address'))
     'You selected:', REG_CITY_NOT_LIVE_CITY
     if REG_CITY_NOT_LIVE_CITY=="Same with Work Address":
@@ -53,7 +53,7 @@ def main():
         REG_CITY_NOT_LIVE_CITY=1
 
     NAME_INCOME_TYPE = st.selectbox(
-        'Client\'s Income From ?',
+        'Client\'s source of income',
         ('Working','Commercial Associate','Pensioner','Stat Servant','Unemployed','Maternity Leave','Student','Businessman'))
     'You selected:', NAME_INCOME_TYPE
 
@@ -75,7 +75,7 @@ def main():
         NAME_INCOME_TYPE=7
 
     NAME_CONTRACT_TYPE = st.selectbox(
-        'Client\'s Type Loan?',
+        'Client\'s type of loan?',
         ('Cash Loans','Revolving Loans'))
     'You selected:', NAME_CONTRACT_TYPE
     if NAME_CONTRACT_TYPE=="Cash Loans":
@@ -85,15 +85,15 @@ def main():
 
 
     REGION_RATING_CLIENT_W_CITY = st.selectbox(
-        'Client Region Live?',
+        'Client\'s region rating',
         (1,2,3))
     'You selected:',REGION_RATING_CLIENT_W_CITY
 
-    DAYS_BIRTH = st.text_input('Client\'s Age This Year')
+    DAYS_BIRTH = st.text_input('Client\'s age this year')
 
-    AMT_ANNUITY = st.text_input('Amount of Client\'s Income In A Year')
+    AMT_ANNUITY = st.text_input('Amount of client\'s income in a year')
 
-    AMT_GOODS_PRICE = st.text_input('Amount of Client Want To Loan')
+    AMT_GOODS_PRICE = st.text_input('Amount of client want to loan')
 
     diagnose = ''
 
@@ -109,9 +109,9 @@ def loan_predict(input_data):
     print(prediction)
     
     if prediction[0] == 1:
-        return 'This Client Can\'t Pay the Loan'
+        return 'This client can\'t pay the loan.'
     else:
-        return 'This Client Can Pay the Loan'
+        return 'This client can pay the loan.'
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     main()
