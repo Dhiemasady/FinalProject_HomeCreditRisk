@@ -113,5 +113,5 @@ def loan_predict(input_data):
     else:
         return 'This client can pay the loan.'
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     main()
