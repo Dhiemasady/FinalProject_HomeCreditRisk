@@ -75,7 +75,7 @@ def main():
         NAME_INCOME_TYPE=7
 
     NAME_CONTRACT_TYPE = st.selectbox(
-        'Clien\’s type of loans',
+        'Client\’s type of loans',
         ('Cash Loans','Revolving Loans'))
     'You selected:', NAME_CONTRACT_TYPE
     if NAME_CONTRACT_TYPE=="Cash Loans":
@@ -91,7 +91,7 @@ def main():
 
     DAYS_BIRTH = st.text_input('Client\'s age this year')
 
-    AMT_ANNUITY = st.text_input('Clien\’s loan annuity')
+    AMT_ANNUITY = st.text_input('Client\’s loan annuity')
 
     AMT_GOODS_PRICE = st.text_input('Amount of client want to loan')
 
